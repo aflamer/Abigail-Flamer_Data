@@ -363,7 +363,7 @@ def cured(patient_data, patient_id, code):
 
         if patient["patient_id"] == patient_id:
             for diagnosis in patient["diagnoses"][:]:
-                # Check if the diagnosis code matches and is not in malformed_diagnoses
+                # Check if the diagnosis code matches and is valid ICD-10
                 if diagnosis == code and get_code_description(code):
                     # Remove the diagnosis from the patient's diagnoses list
                     patient["diagnoses"].remove(diagnosis)
