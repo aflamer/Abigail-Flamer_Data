@@ -293,7 +293,7 @@ def color_coded_table(patient_data,
                 malformed_diagnoses = patient['malformed_diagnoses']
                 resolved_diagnoses = patient['resolved_diagnoses']
                 
-                # Color code: red for priority diagnoses, green for non-priority valid diagnoses, magenta for malformed ICD-10 codes
+                # Default color code: red for priority diagnoses, yellow for non-priority valid diagnoses, magenta for malformed ICD-10 codes, green for resolved diagnoses
                 colored_codes = []
                 colored_diagnoses = []
             
